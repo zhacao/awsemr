@@ -35,3 +35,6 @@ if __name__ == "__main__":
     parser.add_argument('--output_uri', help="The URI where output is saved, like an S3 bucket location.")
     args = parser.parse_args()
     calculate_red_violations(args.data_source, args.output_uri)
+
+
+# spark-submit --deploy-mode cluster s3://zhanyuemrtest/pyspark/pysparkapp1.py --data_source s3://zhanyuemrtest/pyspark/food_establishment_data.csv --output_uri s3://zhanyuemrtest/pyspark/output/
